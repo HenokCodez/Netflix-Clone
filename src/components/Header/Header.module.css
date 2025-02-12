@@ -1,0 +1,107 @@
+/* Navbar Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px 5%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Scroll Effect */
+.scrolled {
+  background-color: rgb(22, 21, 21);
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+/* Left Section */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.left img {
+  max-width: 90px;
+  cursor: pointer;
+}
+
+.left ul {
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.left ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.left ul li:hover {
+  color: #b3b3b3;
+}
+
+/* Right Section */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.right ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Material Icons */
+.icon {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #b3b3b3;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .left ul {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 3%;
+  }
+
+  .right ul {
+    gap: 15px;
+  }
+}
