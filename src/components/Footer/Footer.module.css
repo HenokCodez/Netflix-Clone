@@ -35,3 +35,27 @@ a:hover {
   list-style: none;
   cursor: pointer;
 }
+
+/* To make it more responsive*/
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    padding: 20px 10%;
+    text-align: center;
+  }
+
+  .footerContainer ul {
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .footerContainer .social {
+    justify-content: center;
+    column-gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footerContainer ul li {
+    text-align: center;
+  }
+}
